@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BunBun Browse V1</title>
+    <link rel="stylesheet" type="text/css" href="style_bunbun_v1.css">
+  </head>
+
+  <body>
+
+    <!-- Navigation bar  -->
+    <header>
+      <div class="nav-container">
+      <a href="home_v1.html" class="logo"> <img src="bun_photos/logo.png" alt="Bun Bun" style="width:97px;height:18px;"></a>
+        <nav>
+          <ul>
+            <li><a href="about_v1.html"> About Us </a></li>
+            <li><a href="browse_v1.html"> Order Online </a></li>
+            <a href="#" class="cart"><img src="bun_photos/cart_btn.png" alt="Cart"></a>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+
+    <div class="container"> <!-- contains everything -->     
+      
+      <br><br><br>
+      <!-- All buns section -->
+      <h2>All Buns</h2> 
+      <h4>Comes with different glazing options!</h4>
+
+      <div class="allbun-wrapper"> 
+
+          <a href="#open-modal"> <!--put a tag outside the card-->
+            <div class="card">
+              <img src="bun_photos/original_tn.png" class="thumbnail"/>
+              <h4 class="bun-name">Original | $ 2</h4>
+            </div></a>
+        <!--product detail window content-->
+        <div id="open-modal" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close delete">&times;</a>
+            <div class="detail-name"><h2>Original</h2></div> <!--name changes-->
+
+            <div class="modal-content-both">
+              <div class="modal-content-left">
+                <img src="bun_photos/detail_original.png" class="detail-image"/> <!--image changes-->
+                <div class="info-box"><h5>Ingredients</h5></div>
+                <div class="info-box"><h5>Nutrition Factor</h5></div>
+              </div>
+
+              <div class="modal-content-right">
+                <div class="detail-price">
+                  <h2 class="price">$2</h2>
+                  <h4 class="perbun"> / Bun </h4>
+                </div>
+                <div class="selection-wrapper">
+                  <div class="glazing-selection"> 
+                    <h4>Glazing</h4>
+                    <select class="custom-select">
+                      <option value="0">None</option>
+                      <option value="1">Sugar-milk</option>
+                      <option value="2">Vanila-milk</option>
+                      <option value="3">Double Chocolate</option>
+                    </select> 
+                  </div> <!--glazing-selection-->
+                  <div class="quantity-selection"> 
+                  <h4>Quantity</h4>
+                  <select class="custom-select">
+                      <option value="0">1</option>
+                      <option value="1">3</option>
+                      <option value="2">6</option>
+                      <option value="3">12</option>
+                    </select>
+                  </div> <!--quantity-selection-->
+                </div>  <!-- selection-wrapper-->
+
+                <div class="calc-wrapper">
+                  <div class="align-left-right">
+                    <h5 class="align-left">Subtotal</h5> 
+                    <h5 class="align-right">$2</h5> 
+                  </div>
+                   <div class="align-left-right">
+                    <h5 class="align-left">Total</h5> 
+                    <h5 class="align-right">$2</h5> 
+                   </div> 
+                </div>
+
+                <div class="two-btns">
+                  <div class="small-btn">Add to Cart</div>
+                  <div class="small-btn">Checkout</div>
+                </div>
+              </div> <!-- modal-content-right-->
+            </div> <!-- modal-content-both-->
+
+          </div> <!-- modal-content (basically the window -->
+        </div> <!-- modal (basically the dark overlay -->
+        <!--product detail window content ends-->
+
+        <div class="card">
+          <img src="bun_photos/blackberry_tn.png" class="thumbnail"/>
+          <h4>Blackberry | $ 2</h4>
+        </div> 
+
+        <div class="card"> 
+          <img src="bun_photos/walnut_tn.png" class="thumbnail"/>
+          <h4>Walnut | $ 14</h4>
+        </div>
+
+        <div class="card"> 
+          <img src="bun_photos/glutenfree_tn.png" class="thumbnail"/>
+          <h4>Original (Gluten Free) | $ 20</h4>
+        </div> 
+
+        <div class="card">
+          <img src="bun_photos/pumpspice_tn.png" class="thumbnail"/>
+          <h4>Pumpkin Spice | $ 2</h4>
+        </div>
+
+        <div class="card">
+          <img src="bun_photos/pecan_tn.png" class="thumbnail"/>
+          <h4>Caramel Pecan | $ 2</h4>
+        </div> 
+
+      </div> <!-- allbun-wrapper -->
+
+      <br><br><br><hr><br><br><br>
+
+      <!-- Combo section -->
+      <h2>Combos</h2>
+      <h4>Customizable flavors and glazing in a box! Scroll horizontally to see more Combo boxes.</h4>
+        <div class="combo-outer-wrapper">
+          <!--<div id="previous-btn"><img src="bun_photos/previous.png" alt="previous"></div>-->
+            <div class="combo-wrapper">
+              
+              <div class="combo-card">
+                <img src="bun_photos/box_4_tn.png"/>
+                <h4>Box of 4 | $ 7</h4>
+              </div>
+
+              <div class="combo-card">
+                <img src="bun_photos/box_6_tn.png"/>
+                <h4>Box of 6 | $ 10</h4>
+              </div>
+
+              <div class="combo-card">
+                <img src="bun_photos/box_9_tn.png"/>
+                <h4>Box of 9 | $ 16</h4>
+              </div>
+
+              <div class="combo-card">
+                <img src="bun_photos/box_9_tn.png"/>
+                <h4>Box of 12 | $ 22</h4>
+              </div>
+
+              <div class="combo-card">
+                <img src="bun_photos/box_9_tn.png"/>
+                <h4>Box of 24 | $ 40</h4>
+              </div> 
+            </div> <!-- combo-wrapper -->
+        <!--<div id="next-btn"><img src="bun_photos/next.png" alt="next"></div>-->
+      </div> <!-- combo-outer-wrapper -->
+      
+      <br><br><br>
+
+    </div> <!-- container -->
+
+    <!--Footer-->
+    <div class="footer-bg">
+        <div class="text-sans"> <!--just for fonts-->
+          <div class="footer-grid">
+            <div class="footer-grid-stuff"><ul>
+              <li>Bun Bun</li>
+              <li><a href="home_v1.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="browse_v1.html">Order Online</a></li>
+          </ul></div> <!--footer-grid-stuff 1-->
+        
+            <div class="footer-grid-stuff"><ul>
+              <li>Visit</li>
+              <li><a href="https://cathedralmansions.com/">4716 Ellsworth Ave. #902 Pittsburgh, PA, USA 15213</a></li>
+          </ul></div> <!--footer-grid-stuff 2-->
+
+          <div class="footer-grid-stuff"><ul>
+              <li>Contact</li>
+              <li><a href="#">bunbunpittsburgh@gmail.com </a></li>
+              <li><a href="browse_v1.html">408 540 8069</a></li>
+          </ul></div> <!--footer-grid-stuff 3-->
+
+          <div class="footer-grid-stuff"><ul>
+              <li>Support Us</li>
+              <li><a href="https://www.instagram.com/">Instagram</a></li>
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+          </ul></div> <!--footer-grid-stuff 4-->
+        </div> <!--footer-grid-->
+        </div> <!--text-sans-->
+    </div> <!--footer-bg-->
+
+  </body>
+</html>

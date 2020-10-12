@@ -1,0 +1,640 @@
+/* basic stuff */
+.container{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top:  100px;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: #0B0014;
+  line-height: normal;
+}
+
+.h1-white {
+  font-size: 36px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: white;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: #0B0014;
+  line-height: normal;
+}
+
+h3 {
+  ont-size: 20px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: #0B0014;
+  line-height: normal;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: #0B0014;
+  line-height: normal;
+  text-decoration: none;
+}
+
+h5 {
+  font-size: 13px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: #0B0014;
+  line-height: normal;
+}
+
+.text-sans-white {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: normal;
+  color: white;
+  line-height: normal;
+  font-weight: 500px;
+  padding-top: 45px;
+  width: 472px;
+}
+
+p {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: normal;
+  color: #2A1A37;
+  line-height: normal;
+  font-weight: 500px;
+}
+
+/* basic footer */
+.footer-bg {
+  background-color: #EBE0D1;
+  height: 205px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-grid-stuff {
+
+}
+
+.text-sans ul {
+  list-style: none;
+  margin: 0;
+}
+
+.text-sans { /* just for the top text*/
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: normal;
+  color: #2A1A37;
+  line-height: normal;
+  font-weight: bold;
+  padding-top: 45px;
+}
+
+.text-sans ul li a {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: normal;
+  color: #2A1A37;
+  line-height: normal;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.text-sans ul li {
+  margin-bottom: 15px;
+}
+
+/* nav bar stuff */
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #EBE0D1;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 2;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  margin: 20px 0;
+}
+
+.cart {
+  float: right;
+  margin-left: 84px;
+  margin-top: 15px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 84px;
+  padding-top: 20px;
+}
+
+nav ul > li > a {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2A1A37;
+  line-height: normal;
+  text-decoration: none;
+}
+
+nav ul > li > a:hover{
+  color: #6C458B;
+}
+/* nav bar stuff end */
+/* basic stuff end*/
+
+/* This section is for home page */
+#bg-image-home {
+  background-image: url('bun_photos/home_banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 638px;
+}
+
+.banner-text {
+  padding-top: 192px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-heading {
+  font-size: 36px;
+  font-family: Palatino Linotype;
+  font-weight: bold;
+  color: #0B0014;
+  line-height: normal;
+}
+
+.home-subheading {
+  font-size: 20px;
+  font-family: Palatino Linotype;
+  font-weight: bold;
+  color: #0B0014;
+  line-height: normal;
+  margin-top: 15px;
+}
+
+.home-btn {
+  background-color: #2A1A37;
+  border: none;
+  color: white;
+  padding: 13px 85px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 27px 0 15px 0;
+}
+
+.home-btn:hover {
+  background-color: #6C458B; 
+  color: white;
+  margin: 27px 0 15px 0;
+}
+
+.address-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 68px;
+  align-items: flex-end;
+}
+
+.search input[type=text] {
+  padding: 13px 414px 13px 18px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  margin-top: 21px;
+  font-size: 16px;
+  background-color: #F3F3F3;
+  font-family: roboto;
+  color: #BABABA;
+  font-weight: regular; 
+}
+
+.search-btn {
+  background-color: #2A1A37;
+  height: 45px;
+  width: 45px;
+  border-radius: 0 4px 4px 0;
+}
+
+.search-btn img {
+  padding: 10px;
+}
+
+.home-left-right-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+#howmade-bg {
+  background-image: url('bun_photos/howbunsaremade.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#review-bg {
+  background-image: url('bun_photos/review.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-stuff-text {
+  width: 450px;
+  text-align: center;
+
+}
+
+#review-heading {
+  font-size: 24px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: white;
+  line-height: normal;
+}
+
+#review-p{
+  font-size: 16px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: white;
+  line-height: normal;
+  margin-top: 35px;
+}
+/* home page ends */
+
+/* This section is for browse page */
+/* horizontal slide thing in browse page */
+
+hr {
+  border: 1px dashed #DBD9DD;
+}
+
+.combo-outer-wrapper {
+
+}
+
+.combo-wrapper {
+  display: flex;
+  grid-gap: 54px;
+  overflow-x: scroll;
+}
+
+.combo-card {
+  background: white;
+  grid-areas: combo;
+}
+
+/*#previous-btn {
+  margin: 50px 0px;
+}
+
+#next-btn {
+  margin: 50px 0px;
+} These won't work */
+
+/* horizontal slide thing end */
+
+/* browse page all bun section */
+.card {
+  grid-areas: bun;
+}
+
+div > a > h4 {
+  text-decoration: none;
+} /* I can't figure out how to remove the underline in card */
+
+.allbun-wrapper {
+  display: grid;
+  grid-gap: 54px;
+  grid-template-areas:
+    "bun bun bun"
+    "bun bun bun";
+    grid-auto-rows: 307px;
+}
+
+img.thumbnail {
+  max-width: 300px;
+  max-height: auto; 
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* idk change later */
+  visibility: hidden; /* hidden for now */
+}
+/* if element with class "modal" is target */
+.modal:target {
+  visibility: visible;
+  z-index: 3;
+}
+
+.modal-content {
+  background: white;
+  width: 800px;
+  max-height: 80%;
+  padding: 25px 50px;
+  margin: 25px;
+  border-radius: 4px;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.12);
+  overflow: auto;
+}
+
+.detail-name {
+
+}
+
+.modal-content-both {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-content-left {
+  max-width: 350px;
+
+}
+
+.detail-image {
+  height: 300px;
+}
+
+.info-box {
+  outline: 1px solid #2A1A37; 
+  outline-offset: -1px;
+  padding: 2px 12px;
+  margin: 10px 0;
+  text-align: left;
+  align-items: center;
+  /* height: 40px; */
+  width: 300px;
+}
+
+.arrow-down {
+  float: right;
+}
+
+.modal-content-right {
+  margin-left: 38px;
+  max-width: 350px;
+}
+
+.detail-price {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.price {
+  margin-right: 11px;
+}
+
+/* selection stuff */
+.selection-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.glazing-selection {
+  margin-right: 30px;
+}
+
+.custom-select {
+  width: 153px;
+  height: 40px;
+  border: 1px solid #DBD9DD;
+  background-color: #F3F3F3;
+  border-radius: 5px;
+  font-size: 4px
+  font-family: Roboto;
+  font-weight: normal;
+  color: #2A1A37;
+  line-height: normal;
+  padding: 8px, 18px;
+  overflow: hidden; 
+}
+
+.align-left-right {
+  padding: 14px 0;
+  border-bottom: 1px dashed #000;
+  max-width: 340px;
+  clear: both;
+  height: 42px;
+
+}
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+.two-btns {
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+
+.small-btn {
+  background-color: #2A1A37;
+  width: 100px;
+  border: none;
+  color: white;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 29px 23px 0 0;
+}
+
+.small-btn:hover {
+  background-color: #6C458B; 
+  color: white;
+  margin: 29px 23px 0 0;
+}
+/* x button */
+.modal-close {
+  position: relative;  /*idk change later*/
+  float: right;
+  top: 0;
+  right: 0;
+  font-size: 35px;
+  color: #2A1A37;
+  padding: 8px;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+
+.modal-close:hover, .modal-close:focus {
+  color: #6C458B;
+}
+
+.delete {
+  -webkit-appearance: none;
+}
+/*responsiveness ?*/
+@media(max-width: 992px) {
+  .modal-content { width: 80%;}
+}
+
+@media(max-width: 767px) {
+  .modal-content { padding: 15px;}
+}
+/* all bun section end */
+
+/* about section */
+.about-left-right-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#bg-image-about1 {
+  background-image: url('bun_photos/about_banner1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 623px;
+}
+
+#about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-left-text {
+  text-align: center;
+  width: 400px;
+}
+
+#about-right {
+  margin: auto auto auto 10px;
+}
+
+#about-right-text {
+  width: 586px;
+}
+
+#bg-image-about2 {
+  background-image: url('bun_photos/about_banner2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 623px;
+}
+
+.about-btn {
+  background-color: #EBE0D1;
+  border: none;
+  color: #2A1A37;
+  padding: 13px 85px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 27px 0 15px 0;
+}
+
+.about-btn:hover {
+  background-color: #6C458B; 
+  color: white;
+  margin: 27px 0 15px 0;
+}
+
+

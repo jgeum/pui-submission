@@ -1,0 +1,130 @@
+/* basic stuff */
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: #0B0014;
+  line-height: normal;
+}
+h4 {
+  font-size: 16px;
+  font-family: Palatino Linotype;
+  font-weight: normal;
+  color: #0B0014;
+  line-height: normal;
+}
+/* basic stuff end*/
+
+/* nav bar stuff */
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #EBE0D1;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  margin: 20px 0;
+}
+
+.cart {
+  float: right;
+  margin-left: 84px;
+  margin-top: 15px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 84px;
+  padding-top: 20px;
+}
+
+nav ul > li > a {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2A1A37;
+  line-height: normal;
+  text-decoration: none;
+}
+
+nav ul > li > a:hover{
+  color: white;
+}
+/* nav bar stuff end */
+
+/* horizontal slide thing */
+.combo-outer-wrapper {
+
+}
+
+.combo-wrapper {
+  display: flex;
+  grid-gap: 54px;
+  overflow-x: scroll;
+}
+
+.combo-card {
+  background: purple;
+  grid-areas: combo;
+}
+
+#previous-btn {
+  margin: 50px 0px;
+}
+
+#next-btn {
+  margin: 50px 0px;
+}
+/* horizontal slide thing end */
+
+/* all bun section */
+.card {
+  grid-areas: bun;
+}
+
+.allbun-wrapper {
+  display: grid;
+  grid-gap: 54px;
+  grid-template-areas:
+    "bun bun bun"
+    "bun bun bun";
+    grid-auto-rows: 307px;
+}
+
+img.thumbnail {
+  max-width: 300px;
+  max-height: auto; 
+}
+/* all bun section end */
+
+
+
